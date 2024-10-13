@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #game {
+            margin-top: 50px;
+        }
+
+        #cookie-container {
+            margin: 20px auto;
+        }
+
+        #cookie {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .generator {
+            margin: 15px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body><a href="index.html">
+        <button type="button"  class="cn6">Home</button>
+        </a>
+    
+    <div id="game">
+        <h1>Cookie Clicker Clone</h1>
+        <div id="cookie-container">
+            <img id="cookie" src="cookie.jpg" alt="Cookie">
+        </div>
+        <p>Cookies: <span id="counter">0</span></p>
+        <p>Click Power: <span id="clickPower">1</span></p>
+        <!-- Generators -->
+        <div class="generator">
+            <button id="autoClicker">Buy Auto-Clicker (100 Cookies)</button> - Produces 1 cookie every second
+        </div>
+        <div class="generator">
+            <button id="grandma">Buy Grandma (1000 Cookies)</button> - Produces 5 cookies every second
+        </div>
+        <div class="generator">
+            <button id="factory">Buy Factory (10000 Cookies)</button> - Produces 20 cookies every second
+        </div>
+        <div class="generator">
+            <button id="mine">Buy Mine (100000 Cookies)</button> - Produces 50 cookies every second
+        </div>
+        <div class="generator">
+            <button id="shipment">Buy Shipment (1000000 Cookies)</button> - Produces 100 cookies every second
+        </div>
+        <div class="generator">
+            <button id="lab">Buy Lab (10000000 Cookies)</button> - Produces 200 cookies every second
+        </div>
+        <div class="generator">
+            <button id="portal">Buy Portal (100000000 Cookies)</button> - Produces 500 cookies every second
+        </div>
+        <div class="generator">
+            <button id="timeMachine">Buy Time Machine (1000000000 Cookies)</button> - Produces 1000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="antimatterCondenser">Buy Antimatter Condenser (10000000000 Cookies)</button> - Produces 2000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="prism">Buy Prism (100000000000 Cookies)</button> - Produces 5000 cookies every second
+        </div>
+        <!-- New Upgrades -->
+        <div class="generator">
+            <button id="ship">Buy Ship (500000 Cookies)</button> - Produces 150 cookies every second
+        </div>
+        <div class="generator">
+            <button id="dragon">Buy Dragon (5000000 Cookies)</button> - Produces 300 cookies every second
+        </div>
+        <div class="generator">
+            <button id="robot">Buy Robot (50000000 Cookies)</button> - Produces 600 cookies every second
+        </div>
+        <div class="generator">
+            <button id="demon">Buy Demon (500000000 Cookies)</button> - Produces 1200 cookies every second
+        </div>
+        <div class="generator">
+            <button id="ninja">Buy Ninja (5000000000 Cookies)</button> - Produces 2000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="wizard">Buy Wizard (50000000000 Cookies)</button> - Produces 3000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="roboticFactory">Buy Robotic Factory (1000000000 Cookies)</button> - Produces 4000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="cyborg">Buy Cyborg (20000000000 Cookies)</button> - Produces 6000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="alien">Buy Alien (300000000000 Cookies)</button> - Produces 8000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="supercomputer">Buy Supercomputer (5000000000000 Cookies)</button> - Produces 10000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="spaceStation">Buy Space Station (10000000000000 Cookies)</button> - Produces 12000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="galaxy">Buy Galaxy (20000000000000 Cookies)</button> - Produces 15000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="blackhole">Buy Blackhole (40000000000000 Cookies)</button> - Produces 20000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="nebula">Buy Nebula (80000000000000 Cookies)</button> - Produces 25000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="supernova">Buy Supernova (160000000000000 Cookies)</button> - Produces 30000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="quasar">Buy Quasar (320000000000000 Cookies)</button> - Produces 35000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="pulsar">Buy Pulsar (640000000000000 Cookies)</button> - Produces 40000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="wormhole">Buy Wormhole (1280000000000000 Cookies)</button> - Produces 45000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="timeVortex">Buy Time Vortex (2560000000000000 Cookies)</button> - Produces 50000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="dimensionalRift">Buy Dimensional Rift (5120000000000000 Cookies)</button> - Produces 60000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="multiverse">Buy Multiverse (10240000000000000 Cookies)</button> - Produces 70000 cookies every second
+        </div>
+        <div class="generator">
+            <button id="eternityMachine">Buy Eternity Machine (20480000000000000 Cookies)</button> - Produces 80000 cookies every second
+        </div>
+        <!-- Click Upgrades -->
+        <div class="generator">
+            <button id="clickBoost">Buy Click Boost (500 Cookies)</button> - Increases click power by 1
+        </div>
+        <div class="generator">
+            <button id="clickBoost2">Buy Click Boost II (5000 Cookies)</button> - Increases click power by 2
+        </div>
+        <div class="generator">
+            <button id="clickBoost3">Buy Click Boost III (50000 Cookies)</button> - Increases click power by 3
+        </div>
+        <div class="generator">
+            <button id="clickBoost4">Buy Click Boost IV (500000 Cookies)</button> - Increases click power by 4
+        </div>
+        <div class="generator">
+            <button id="clickBoost5">Buy Click Boost V (5000000 Cookies)</button> - Increases click power by 5
+        </div>
+        <div class="generator">
+            <button id="clickBoost6">Buy Click Boost VI (50000000 Cookies)</button> - Increases click power by 6
+        </div>
+        <div class="generator">
+            <button id="clickBoost7">Buy Click Boost VII (500000000 Cookies)</button> - Increases click power by 7
+        </div>
+        <div class="generator">
+            <button id="clickBoost8">Buy Click Boost VIII (5000000000 Cookies)</button> - Increases click power by 8
+        </div>
+        <div class="generator">
+            <button id="clickBoost9">Buy Click Boost IX (50000000000 Cookies)</button> - Increases click power by 9
+        </div>
+        <div class="generator">
+            <button id="clickBoost10">Buy Click Boost X (500000000000 Cookies)</button> - Increases click power by 10
+        </div>
+    </div>
+
+<script>
+    let cookieCounter = parseInt(localStorage.getItem("cookieCounter")) || 0;
+    let clickPower = parseInt(localStorage.getItem("clickPower")) || 1;
+
+    const cookie = document.getElementById("cookie");
+    const counter = document.getElementById("counter");
+    const clickPowerDisplay = document.getElementById("clickPower");
+
+    const clickUpgrades = {
+        clickBoost: 1,
+        clickBoost2: 2,
+        clickBoost3: 3,
+        clickBoost4: 4,
+        clickBoost5: 5,
+        clickBoost6: 6,
+        clickBoost7: 7,
+        clickBoost8: 8,
+        clickBoost9: 9,
+        clickBoost10: 10
+    };
+
+    const generators = [
+        { id: "autoClicker", cost: 100, cps: 1 },
+        { id: "grandma", cost: 1000, cps: 5 },
+        { id: "factory", cost: 10000, cps: 20 },
+        { id: "mine", cost: 100000, cps: 50 },
+        { id: "shipment", cost: 1000000, cps: 100 },
+        { id: "lab", cost: 10000000, cps: 200 },
+        { id: "portal", cost: 100000000, cps: 500 },
+        { id: "timeMachine", cost: 1000000000, cps: 1000 },
+        { id: "antimatterCondenser", cost: 10000000000, cps: 2000 },
+        { id: "prism", cost: 500000000000, cps: 5000 },
+        { id: "ship", cost: 500000, cps: 150 },
+        { id: "dragon", cost: 5000000, cps: 300 },
+        { id: "robot", cost: 50000000, cps: 600 },
+        { id: "demon", cost: 500000000, cps: 1200 },
+        { id: "ninja", cost: 5000000000, cps: 2000 },
+        { id: "wizard", cost: 50000000000, cps: 3000 },
+        { id: "roboticFactory", cost: 1000000000, cps: 4000 },
+        { id: "cyborg", cost: 20000000000, cps: 6000 },
+        { id: "alien", cost: 300000000000, cps: 8000 },
+        { id: "supercomputer", cost: 5000000000000, cps: 10000 },
+        { id: "spaceStation", cost: 10000000000000, cps: 12000 },
+        { id: "galaxy", cost: 20000000000000, cps: 15000 },
+        { id: "blackhole", cost: 40000000000000, cps: 20000 },
+        { id: "nebula", cost: 80000000000000, cps: 25000 },
+        { id: "supernova", cost: 160000000000000, cps: 30000 },
+        { id: "quasar", cost: 320000000000000, cps: 35000 },
+        { id: "pulsar", cost: 640000000000000, cps: 40000 },
+        { id: "wormhole", cost: 1280000000000000, cps: 45000 },
+        { id: "timeVortex", cost: 2560000000000000, cps: 50000 },
+        { id: "dimensionalRift", cost: 5120000000000000, cps: 60000 },
+        { id: "multiverse", cost: 10240000000000000, cps: 70000 },
+        { id: "eternityMachine", cost: 20480000000000000, cps: 80000 }
+    ];
+
+    const upgrades = {};
+    generators.forEach(generator => {
+        upgrades[generator.id] = { amount: 0, cost: generator.cost, cps: generator.cps };
+    });
+
+    // Set click upgrade button events
+    Object.keys(clickUpgrades).forEach(id => {
+        const button = document.getElementById(id);
+        button.addEventListener("click", () => {
+            const cost = parseInt(button.textContent.match(/\d+/)[0]);
+            if (cookieCounter >= cost) {
+                cookieCounter -= cost;
+                button.disabled = true;
+                clickPower += clickUpgrades[id];
+                saveToLocalStorage();
+                updateDisplay();
+            }
+        });
+    });
+
+    cookie.addEventListener("click", () => {
+        cookieCounter += clickPower;
+        saveToLocalStorage();
+        updateDisplay();
+    });
+
+    generators.forEach(generator => {
+        const button = document.getElementById(generator.id);
+        button.addEventListener("click", () => {
+            if (cookieCounter >= upgrades[generator.id].cost) {
+                cookieCounter -= upgrades[generator.id].cost;
+                upgrades[generator.id].amount += 1;
+                button.disabled = true;
+                saveToLocalStorage();
+                setInterval(() => {
+                    if (upgrades[generator.id].amount > 0) {
+                        cookieCounter += upgrades[generator.id].amount * generator.cps;
+                        saveToLocalStorage();
+                        updateDisplay();
+                    }
+                }, 1000);
+            }
+        });
+    });
+
+    function updateDisplay() {
+        counter.textContent = cookieCounter;
+        clickPowerDisplay.textContent = clickPower;
+        generators.forEach(generator => {
+            document.getElementById(generator.id).disabled = cookieCounter < upgrades[generator.id].cost;
+        });
+        Object.keys(clickUpgrades).forEach(id => {
+            document.getElementById(id).disabled = cookieCounter < parseInt(document.getElementById(id).textContent.match(/\d+/)[0]);
+        });
+    }
+
+    function saveToLocalStorage() {
+        localStorage.setItem("cookieCounter", cookieCounter);
+        localStorage.setItem("clickPower", clickPower);
+    }
+
+    updateDisplay(); // Initial display update
+</script>
+
+</body>
+</html>
+
+

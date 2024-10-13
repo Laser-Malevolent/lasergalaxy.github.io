@@ -1,0 +1,145 @@
+        body {
+            margin: 0; /* Reset default margin */
+            background-color: white; /* Set a background color for the body */
+        }
+        
+        
+        .cn11 {
+            text-decoration: none;
+        }
+        
+        
+        
+        
+        
+        
+           .cn10 {
+            font-family:'Comic Sans MS';
+            text-align:center;
+        }
+        
+        .cn1 {
+            text-align: center; /* Center content inside the cn1 div */
+            background-color: black; /* Set background color for the top section */
+            padding: 20px; /* Add padding for spacing */
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            color: gray;
+            font-family:'Comic Sans MS';
+            float:center;
+            margin: 0;
+        }      
+        
+
+                .cn1 {
+            text-align: center; /* Center content inside the cn1 div */
+            background-color: black; /* Set background color for the top section */
+            padding: 20px; /* Add padding for spacing */
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            color: gray;
+            font-family:'Comic Sans MS';
+
+        }      
+        
+        
+        
+                .cn1 p {
+            color: gray;
+            font-family:'Comic Sans MS';
+            font-size:30px;
+             margin-bottom:10px;
+        }      
+        
+        .cn1 a {
+            color: gray;
+            font-family:'Comic Sans MS';
+            font-size:30px;
+             margin-bottom:10px;
+             text-decoration: none;
+        }      
+        
+
+
+
+        .cn4 {
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+        }
+
+.cn9 {
+    width: 90vw;
+    height: 90vh;
+    padding: 10px;
+    position: absolute;
+    top: calc(50% + 40px); /* Adjust this value to 40px if needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.cn2 {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    background-color: #003366; /* Darker blue background */
+    padding: 10px; /* Add some padding */
+}
+
+.cn2 a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.cn6 {
+    background-color: #4169E1; /* Light blue button background */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for better spacing */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Button text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    
+}
+
+.cn6:hover {
+    background-color: #3399ff; /* Slightly darker blue on hover */
+}
+
+
+
+.cn8 {
+             font-family: 'Roboto', sans-serif;
+              border-radius: 12px;
+              background-color: red;
+            font-size:20px;
+}
+
+
+        .cn3 {
+            text-align: left;
+            font-size: 20px;
+            font-family: 'Comic Sans MS';
+            margin: 40px; /* Margin for the paragraph */
+            border: 6px solid red; /* Border for the paragraph */
+            padding: 10px; /* Padding for better spacing */
+        }
+           .cn5 p {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Comic Sans MS';
+            background-color:black;
+            padding:5px;
+            color:gray;
+            height:30px;
+           }
+           .cn7 {
+               
+            text-align: left;
+            font-size: 30px;
+            font-family: 'Comic Sans MS';
+            margin: 40px; /* Margin for the paragraph */
+            border: 6px solid red; /* Border for the paragraph */
+            padding: 10px; /* Padding for better spacing */
+           }
