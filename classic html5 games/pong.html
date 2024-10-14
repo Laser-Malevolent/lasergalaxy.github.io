@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #282c34;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            background-color: #20232a;
+            border: 2px solid #61dafb;
+        }
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: #61dafb;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #21a1f1;
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='index.html'">Back to Menu</button>
+    <canvas id="pongCanvas" width="800" height="600"></canvas>
+    <script>
+        const canvas = document.getElementById('pongCanvas');
+        const ctx = canvas.getContext('2d');
+
+        const paddleWidth = 10, paddleHeight = 100, ballSize = 10;
+        let playerPaddleY = canvas.height / 2 - paddleHeight / 2;
+        let aiPaddleY = canvas.height / 2 - paddleHeight / 2;
+        let ballX = canvas.width / 2, ballY = canvas.height / 2;
+        let ballSpeedX = Math.random() * 4 + 2; // Random starting speed
+        let ballSpeedY = Math.random() * 4 + 2; // Random starting speed
+        const paddleSpeed = 5;
+        let playerScore = 0, aiScore = 0;
+
+        const draw = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw paddles and ball
+            ctx.fillStyle = '#61dafb';
+            ctx.fillRect(10, playerPaddleY, paddleWidth, paddleHeight);
+            ctx.fillRect(canvas.width - 20, aiPaddleY, paddleWidth, paddleHeight);
+            ctx.beginPath();
+            ctx.arc(ballX, ballY, ballSize / 2, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Draw scores
+            ctx.font = '24px Arial';
+            ctx.fillText(`Player: ${playerScore}`, 20, 30);
+            ctx.fillText(`AI: ${aiScore}`, canvas.width - 100, 30);
+        };
+
+        const update = () => {
+            // Ball movement
+            ballX += ballSpeedX;
+            ballY += ballSpeedY;
+
+            // Ball collision with top and bottom
+            if (ballY <= 0 || ballY >= canvas.height) ballSpeedY = -ballSpeedY;
+
+            // Ball collision with paddles
+            if (ballX <= 20 && ballY >= playerPaddleY && ballY <= playerPaddleY + paddleHeight) {
+                ballSpeedX = -ballSpeedX;
+                ballX = 20 + ballSize;
+            }
+            if (ballX >= canvas.width - 20 && ballY >= aiPaddleY && ballY <= aiPaddleY + paddleHeight) {
+                ballSpeedX = -ballSpeedX;
+                ballX = canvas.width - 30 - ballSize;
+            }
+
+            // Ball out of bounds
+            if (ballX < 0) {
+                aiScore++;
+                resetBall();
+            }
+            if (ballX > canvas.width) {
+                playerScore++;
+                resetBall();
+            }
+
+            // AI Paddle movement
+            const aiSpeed = 3;
+            if (ballY > aiPaddleY + paddleHeight / 2) {
+                aiPaddleY += aiSpeed;
+            } else {
+                aiPaddleY -= aiSpeed;
+            }
+
+            // AI Paddle boundaries
+            aiPaddleY = Math.max(0, Math.min(aiPaddleY, canvas.height - paddleHeight));
+        };
+
+        const resetBall = () => {
+            ballX = canvas.width / 2;
+            ballY = canvas.height / 2;
+            ballSpeedX = (Math.random() < 0.5 ? 1 : -1) * (Math.random() * 4 + 2);
+            ballSpeedY = (Math.random() < 0.5 ? 1 : -1) * (Math.random() * 4 + 2);
+        };
+
+        const gameLoop = () => {
+            update();
+            draw();
+            requestAnimationFrame(gameLoop);
+        };
+
+        gameLoop();
+
+        document.addEventListener('mousemove', (e) => {
+            playerPaddleY = e.clientY - canvas.offsetTop - paddleHeight / 2;
+            playerPaddleY = Math.max(0, Math.min(playerPaddleY, canvas.height - paddleHeight));
+        });
+    </script>
+</body>
+</html>
