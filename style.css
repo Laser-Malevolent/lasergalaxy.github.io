@@ -16,7 +16,7 @@
         
         
            .cn10 {
-            font-family:'Comic Sans MS';
+            font-family:arial black;
             text-align:center;
         }
         
@@ -28,7 +28,7 @@
             align-items: center; /* Center items vertically */
             justify-content: center; /* Center items horizontally */
             color: gray;
-            font-family:'Comic Sans MS';
+            font-family:arial black;
             float:center;
             margin: 0;
         }      
@@ -42,7 +42,7 @@
             align-items: center; /* Center items vertically */
             justify-content: center; /* Center items horizontally */
             color: gray;
-            font-family:'Comic Sans MS';
+            font-family:arial black;
 
         }      
         
@@ -50,14 +50,14 @@
         
                 .cn1 p {
             color: gray;
-            font-family:'Comic Sans MS';
+            font-family:arial black;
             font-size:30px;
              margin-bottom:10px;
         }      
         
         .cn1 a {
             color: gray;
-            font-family:'Comic Sans MS';
+            font-family:arial black;
             font-size:30px;
              margin-bottom:10px;
              text-decoration: none;
@@ -111,8 +111,7 @@
 
 
 
-.cn8 {
-             font-family: 'Roboto', sans-serif;
+.cn8 {            font-family:arial black;
               border-radius: 12px;
               background-color: red;
             font-size:20px;
@@ -122,7 +121,7 @@
         .cn3 {
             text-align: left;
             font-size: 20px;
-            font-family: 'Comic Sans MS';
+            font-family:arial black;
             margin: 40px; /* Margin for the paragraph */
             border: 6px solid red; /* Border for the paragraph */
             padding: 10px; /* Padding for better spacing */
@@ -130,7 +129,7 @@
            .cn5 p {
             text-align: center;
             font-size: 20px;
-            font-family: 'Comic Sans MS';
+            font-family:arial black;
             background-color:black;
             padding:5px;
             color:gray;
@@ -140,7 +139,7 @@
                
             text-align: left;
             font-size: 30px;
-            font-family: 'Comic Sans MS';
+            font-family:arial black;
             margin: 40px; /* Margin for the paragraph */
             border: 6px solid red; /* Border for the paragraph */
             padding: 10px; /* Padding for better spacing */
