@@ -1,6 +1,6 @@
         body {
             margin: 0; /* Reset default margin */
-            background-color: white; /* Set a background color for the body */
+            background: linear-gradient(to bottom, #262626, #434343, #5f5f5f);
         }
         
         
@@ -12,11 +12,20 @@
         
         
         
+            .cn13 {
+                background: conic-gradient(from 0deg,  #262626, #434343, #5f5f5f,);
+                height: 375px;
+                width: 150vh;
+                padding: 10px;
+                border: none;
+                border-radius: 7px;
+        }       
+
         
         
         
            .cn10 {
-            font-family:arial black;
+            font-family: monospace;
             text-align:center;
         }
         
@@ -28,7 +37,7 @@
             align-items: center; /* Center items vertically */
             justify-content: center; /* Center items horizontally */
             color: gray;
-            font-family:arial black;
+            font-family: monospace;
             float:center;
             margin: 0;
         }      
@@ -36,13 +45,13 @@
 
                 .cn1 {
             text-align: center; /* Center content inside the cn1 div */
-            background-color: black; /* Set background color for the top section */
+            background-color: rgb(17, 16, 16); /* Set background color for the top section */
             padding: 20px; /* Add padding for spacing */
             display: flex; /* Use flexbox for layout */
             align-items: center; /* Center items vertically */
             justify-content: center; /* Center items horizontally */
             color: gray;
-            font-family:arial black;
+            font-family: monospace;
 
         }      
         
@@ -50,14 +59,14 @@
         
                 .cn1 p {
             color: gray;
-            font-family:arial black;
+            font-family: monospace;
             font-size:30px;
              margin-bottom:10px;
         }      
         
         .cn1 a {
             color: gray;
-            font-family:arial black;
+            font-family: monospace;
             font-size:30px;
              margin-bottom:10px;
              text-decoration: none;
@@ -95,7 +104,7 @@
 }
 
 .cn6 {
-    background-color: #4169E1; /* Light blue button background */
+    background: conic-gradient(from 0deg,  #262626, #434343, #5f5f5f);
     border: none; /* Remove border */
     padding: 10px 20px; /* Add padding for better spacing */
     border-radius: 5px; /* Rounded corners */
@@ -111,36 +120,42 @@
 
 
 
-.cn8 {            font-family:arial black;
+.cn8 {      font-family: monospace;
               border-radius: 12px;
               background-color: red;
             font-size:20px;
+            color: white; /* Button text color */
 }
 
 
         .cn3 {
             text-align: left;
             font-size: 20px;
-            font-family:arial black;
+       
+    
+            font-family: monospace;
             margin: 40px; /* Margin for the paragraph */
             border: 6px solid red; /* Border for the paragraph */
             padding: 10px; /* Padding for better spacing */
+            color: white; /* Button text color */
         }
            .cn5 p {
             text-align: center;
             font-size: 20px;
-            font-family:arial black;
-            background-color:black;
+            font-family: monospace;
+   
+        
             padding:5px;
-            color:gray;
+            color: white; /* Button text color */
             height:30px;
            }
            .cn7 {
                
             text-align: left;
             font-size: 30px;
-            font-family:arial black;
+            font-family: monospace;
             margin: 40px; /* Margin for the paragraph */
             border: 6px solid red; /* Border for the paragraph */
             padding: 10px; /* Padding for better spacing */
+            color: white; /* Button text color */
            }
