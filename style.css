@@ -13,12 +13,14 @@
         
         
             .cn13 {
-                background: conic-gradient(from 0deg,  #262626, #434343, #5f5f5f,);
+                background: conic-gradient(from 0deg,  #262626, #434343, #5f5f5f);
                 height: 375px;
-                width: 150vh;
+                width: 170vh;
                 padding: 10px;
                 border: none;
                 border-radius: 7px;
+                text-align: center;
+                
         }       
 
         
@@ -54,6 +56,20 @@
             font-family: monospace;
 
         }      
+
+
+        .cn14 {
+            text-align: center; /* Center content inside the cn1 div */
+            background-color: rgb(17, 16, 16); /* Set background color for the top section */
+            padding: 20px; /* Add padding for spacing */
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            color: gray;
+            font-family: monospace;
+
+        }      
+        
         
         
         
