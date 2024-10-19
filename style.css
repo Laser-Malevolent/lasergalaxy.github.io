@@ -11,18 +11,37 @@
         }
         
         
-        
-            .cn13 {
-                background: conic-gradient(from 0deg,  #262626, #434343, #5f5f5f);
-                height: 375px;
-                width: 170vh;
-                padding: 10px;
-                border: none;
-                border-radius: 7px;
-                text-align: center;
-                
-        }       
+        .cn13 {
+            background: conic-gradient(from 180deg, #1a1a1a, #333333, #4d4d4d, #1a1a1a);
 
+            height: 375px;
+            width: 170vh;
+            padding: 10px;
+            border: none;
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* This will center the content horizontally */
+            text-align: left; /* Aligns text inside the content */
+        font-size: 43px;
+
+    }
+        
+        .cn13 img {
+            max-width: 100%; /* Make sure the image scales properly within the container */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Adjust spacing */
+            border-radius: 15px; /* Rounded corners */
+            display: block; /* Ensure it's treated as a block element */
+            height: 250px;
+            width: 250px;
+        }
+        
+        
+        .cn13 .content {
+            max-width: 60%; /* Adjust width as needed */
+            text-align: left; /* Ensures text alignment is left */
+        }
         
         
         
@@ -66,11 +85,13 @@
             align-items: center; /* Center items vertically */
             justify-content: center; /* Center items horizontally */
             color: gray;
-            font-family: monospace;
 
         }      
         
-        
+        .cn14 h1 {
+            font-family: 'Raleway', sans-serif;
+
+        }
         
         
                 .cn1 p {
@@ -91,11 +112,7 @@
 
 
 
-        .cn4 {
-            width: 250px;
-            height: 250px;
-            padding: 10px;
-        }
+    
 
 .cn9 {
     width: 90vw;
@@ -120,8 +137,8 @@
 }
 
 .cn6 {
-    background: conic-gradient(from 0deg,  #262626, #434343, #5f5f5f);
-    border: none; /* Remove border */
+    background: conic-gradient(from 180deg, #1a1a1a, #333333, #4d4d4d, #1a1a1a);   
+     border: none; /* Remove border */
     padding: 10px 20px; /* Add padding for better spacing */
     border-radius: 5px; /* Rounded corners */
     color: white; /* Button text color */
@@ -138,7 +155,7 @@
 
 .cn8 {      font-family: monospace;
               border-radius: 12px;
-              background-color: red;
+    
             font-size:20px;
             color: white; /* Button text color */
 }
