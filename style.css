@@ -64,6 +64,12 @@
         }      
         
 
+
+        input.gsc-input {
+            width: 100%; /* or set a custom width, like 500px */
+        }
+        
+
                 .cn1 {
             text-align: center; /* Center content inside the cn1 div */
             background-color: rgb(17, 16, 16); /* Set background color for the top section */
