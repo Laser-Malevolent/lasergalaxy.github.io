@@ -22,7 +22,7 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: center; /* This will center the content horizontally */
+    justify-content: center; 
   
 }
 
@@ -53,26 +53,26 @@ button {
 
             display: flex;
             align-items: center;
-            justify-content: center; /* This will center the content horizontally */
-            text-align: left; /* Aligns text inside the content */
+            justify-content: center;
+            text-align: left;
           
 
     }
         
         .c1 img {
-            max-width: 100%; /* Make sure the image scales properly within the container */
-            height: auto; /* Maintain aspect ratio */
-            margin-right: 20px; /* Adjust spacing */
-            border-radius: 15px; /* Rounded corners */
-            display: block; /* Ensure it's treated as a block element */
+            max-width: 100%; 
+            height: auto;
+            margin-right: 20px; 
+            border-radius: 15px;
+            display: block;
             height: 250px;
             width: 250px;
         }
         
         
         .cn13 .content {
-            max-width: 60%; /* Adjust width as needed */
-            text-align: left; /* Ensures text alignment is left */
+            max-width: 60%; 
+            text-align: left; 
         }
         
         
@@ -84,12 +84,12 @@ button {
         
 
         .cn1 {
-            text-align: center; /* Center content inside the cn1 div */
-            background-color: black; /* Set background color for the top section */
-            padding: 20px; /* Add padding for spacing */
-            display: flex; /* Use flexbox for layout */
-            align-items: center; /* Center items vertically */
-            justify-content: center; /* Center items horizontally */
+            text-align: center;
+            background-color: black; 
+            padding: 20px; 
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
             color: gray;
             font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
             float:center;
@@ -99,18 +99,18 @@ button {
 
 
         input.gcse-search {
-            width: 100vw; /* or set a custom width, like 500px */
+            width: 100vw; 
             height: auto;
         }
         
 
                 .cn1 {
-            text-align: center; /* Center content inside the cn1 div */
-            background-color: rgb(17, 16, 16); /* Set background color for the top section */
-            padding: 20px; /* Add padding for spacing */
-            display: flex; /* Use flexbox for layout */
-            align-items: center; /* Center items vertically */
-            justify-content: center; /* Center items horizontally */
+            text-align: center; 
+            background-color: rgb(17, 16, 16);
+            padding: 20px;
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
             color: gray;
             font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
 
@@ -118,12 +118,12 @@ button {
 
 
         .cn14 {
-            text-align: center; /* Center content inside the cn1 div */
-            background-color: rgb(17, 16, 16); /* Set background color for the top section */
-            padding: 20px; /* Add padding for spacing */
-            display: flex; /* Use flexbox for layout */
-            align-items: center; /* Center items vertically */
-            justify-content: center; /* Center items horizontally */
+            text-align: center;
+            background-color: rgb(17, 16, 16); 
+            padding: 20px;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
             color: gray;
 
         }      
@@ -160,7 +160,7 @@ button {
     height: 90vh;
     padding: 10px;
     position: absolute;
-    top: calc(50% + 40px); /* Adjust this value to 40px if needed */
+    top: calc(50% + 40px);
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -168,19 +168,19 @@ button {
 
 .cn2 {
     display: flex;
-    justify-content: space-around; /* Distribute space evenly */
-    background-color: #fffa; /* Darker blue background */
-    padding: 10px; /* Add some padding */
+    justify-content: space-around;
+    background-color: #fffa; 
+    padding: 10px; 
 }
 
 .cn2 a {
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;
 }
 
 
 
 .cn6 {
-    background-color: #0d6efd; /* Bootstrap primary blue */
+    background-color: #0d6efd; 
     border: 1px solid #0d6efd;
     color: white;
     padding: 10px 20px;
@@ -191,12 +191,12 @@ button {
 }
 
 .cn6:hover {
-    background-color: #0b5ed7; /* Darker blue on hover */
+    background-color: #0b5ed7;
     border-color: #0a58ca;
 }
 
 .cn6:active {
-    background-color: #0a58ca; /* Even darker blue on click */
+    background-color: #0a58ca; 
     border-color: #0a53be;
 }
 
@@ -212,7 +212,7 @@ button {
               border-radius: 12px;
     
             font-size:20px;
-            color: whitesmoke; /* Button text color */
+            color: whitesmoke; 
 }
 
 
@@ -222,9 +222,9 @@ button {
        
     
             font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-            margin: 40px; /* Margin for the paragraph */
-            padding: 10px; /* Padding for better spacing */
-            color: rgb(0, 0, 0); /* Button text color */
+            margin: 40px;
+            padding: 10px; 
+            color: rgb(0, 0, 0); 
         }
            .cn5 p {
             text-align: center;
@@ -233,7 +233,7 @@ button {
    
         
             padding:5px;
-            color: white; /* Button text color */
+            color: white;
             height:30px;
            }
            .cn7 {
@@ -241,8 +241,8 @@ button {
             text-align: left;
             font-size: 30px;
             font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-            margin: 40px; /* Margin for the paragraph */
-            border: 6px solid red; /* Border for the paragraph */
-            padding: 10px; /* Padding for better spacing */
-            color: white; /* Button text color */
+            margin: 40px; 
+            border: 6px solid red; 
+            padding: 10px;
+            color: white; 
            }
