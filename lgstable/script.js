@@ -26,21 +26,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
-function searchFiles() {
-    const searchQuery = document.getElementById('searchBar').value.toLowerCase();
-    const files = document.querySelectorAll('.file');
-    
-    files.forEach(file => {
-        if (file.textContent.toLowerCase().includes(searchQuery)) {
-            file.classList.add('show');
-        } else {
-            file.classList.remove('show');
-        }
-    });
-}
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    searchFiles();
-});

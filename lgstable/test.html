@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking Page</title>
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="lglogo.png">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Note Taking Page</h1>
+    <textarea id="noteArea" placeholder="Write your notes here..."></textarea>
+    <br>
+    <button onclick="clearNote()">Clear Note</button>
+    <ul id="noteList"></ul>
+
+    <script>
+        function clearNote() {
+            document.getElementById('noteArea').value = '';
+        }
+
+        document.getElementById('noteArea').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                const noteText = document.getElementById('noteArea').value.trim();
+                if (noteText) {
+                    const noteList = document.getElementById('noteList');
+                    const newNote = document.createElement('li');
+                    newNote.textContent = noteText;
+                    noteList.appendChild(newNote);
+                    document.getElementById('noteArea').value = '';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
